@@ -1,6 +1,6 @@
 # Segunda tarea de APA 2023: Manejo de números primos
 
-## Nom i cognoms: Joan Gallardo 
+## Nom i cognoms: Joan Gallardo Caparros
 
 ## Fichero `primos.py`
 
