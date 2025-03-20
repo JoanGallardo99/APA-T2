@@ -23,6 +23,9 @@ def esPrimo(numero):
 
     >>> esPrimo(1021)
     True
+
+    >>> [ numero for numero in range(2, 50) if esPrimo(numero) ]
+    [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
     """
 
     for prova in range(2, numero):
