@@ -121,6 +121,30 @@ def mcd(numero1, numero2):
     
     return resultado
 
+def mcmN(*numeros):
+    """
+    Devuelve el mínimo común multiplo de sus N argumentos.
+
+    >>> mcmN(42, 60, 70, 63)
+    1260
+    """
+    resultado = numeros[0]
+    for numero in numeros[1:]:
+        resultado = mcm(resultado, numero)
+    return resultado
+
+def mcdN(*numeros):
+    """
+    Devuelve el mínimo común mútiplo de sus N argumentos.
+
+    >>> mcdN(840, 630, 1050, 1470)
+    210
+    """
+    resultado = numeros[0]
+    for numero in numeros[1:]:
+        resultado = mcd(resultado, numero)
+    return resultado
+
 
 if __name__ == "__main__":
     import doctest
